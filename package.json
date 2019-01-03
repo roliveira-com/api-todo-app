@@ -4,8 +4,11 @@
   "description": "",
   "main": "src/loader.js",
   "scripts": {
-    "dev": "./node-modules/nodemon/bin/nodemon.js",
-    "production": "pm2 start src/loader.js --name api-todo-app"
+    "dev": "./node_modules/nodemon/bin/nodemon.js",
+    "production": "pm2 start src/loader.js --name api-todo-app",
+    "monitor": "pm2 monit",
+    "stop": "pm2 stop",
+    "list": "pm2 list"
   },
   "keywords": [],
   "author": "",
